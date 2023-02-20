@@ -8,8 +8,6 @@ dayjs.extend(relativeTime)
 const ContactListItem = ({ user }) => {
 
     const navigation = useNavigation()
-
-    console.log("user", user)
     
     return(
         <Pressable onPress={() => navigation.navigate("Chat",{ id: chat.id, name:chat.user.name })} style={styles.container}>
